@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html  lang="en" xmlns:th="http://www.thymeleaf.org"
+           th:replace="~{base::Layout(~{::body})}">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+		<h1 class="text-center">Admin Profile Page</h1>
+		<h4 class="text-center">Name: [[${user.name}]]</h4>
+		<h4 class="text-center">Mobile No: [[${user.mobileno}]]</h4>
+		<h4 class="text-center">Email: [[${user.email}]]</h4>
+		<h4 class="text-center">Role:[[${user.role}]]</h4>
+		<a href="/logout">Logout</a>	
+</body>
+</html>
